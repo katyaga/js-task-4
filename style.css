@@ -1,0 +1,88 @@
+.main {
+    width: 450px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    width: 450px;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    color: gray;
+    font-family: 'Arial', sans-serif;
+}
+
+.row:first-child,
+.row:last-child {
+    height: 25px;
+    background-color: #ffffff;
+}
+
+.row:first-child .cell:not(:first-child),
+.row:last-child .cell:not(:first-child) {
+    border-left: none;
+}
+
+.row:first-child .cell:not(:last-child),
+.row:last-child .cell:not(:last-child) {
+    border-right: none;
+}
+
+.row:first-child .cell {
+    border-top: 1px solid #a9a9a9;
+}
+
+.row:last-child .cell {
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.cell:first-child,
+.cell:last-child {
+    width: 25px;
+    background-color: #ffffff;
+}
+
+.cell:first-child {
+    border-left: 1px solid #a9a9a9;
+}
+
+.cell:last-child {
+    border-right: 1px solid #a9a9a9;
+}
+
+.row:not(:first-child) .cell:first-child,
+.row:not(:first-child) .cell:last-child {
+    border-top: none;
+}
+
+.black {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.white {
+    color: #000000;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
